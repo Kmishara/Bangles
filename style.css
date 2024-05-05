@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#loader{
+    height: 100vh;
+    width: 100vw;
+   z-index: 999;
+  position: absolute;
+  top: -100%;
+  background-color:  hwb(39 58% 2%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  #loader img{
+  height: 300px;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: hwb(39 58% 2%);
+}
+#nav{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    gap: 70px;
+}
+#nav h1{
+    font-size: 120px; 
+    font-family: "voyage";
+    color:rgba(244, 62, 7, 0.971);
+}
+#list{
+    height: 600px;
+    width: 15%;
+    position: absolute;
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 50px;
+}
+#dr i{
+    display: flex;
+    gap: 45px; 
+    border: 2px solid crimson;
+    color: crimson;
+    border-radius: 20px;
+    padding: 8px 16px; 
+}
+#dg i{
+    display: flex;
+    gap: 45px; 
+    border: 2px solid crimson;
+    color: crimson;
+    border-radius: 20px;
+    padding: 8px 16px; 
+}
+#df i{
+    display: flex;
+    gap: 45px; 
+    border: 2px solid crimson;
+    color: crimson;
+    border-radius: 20px;
+    padding: 8px 16px; 
+}
+#da i{
+    width: 150px;
+    display: flex;
+    gap: 45px; 
+    border: 2px solid crimson;
+    color: crimson;
+    border-radius: 20px;
+    padding: 8px 16px; 
+}
+
+.home i{
+    display: flex;
+    gap: 45px; 
+    border: 2px solid crimson;
+    color: crimson;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+#image{
+    width: 1122px;
+    height: 1112px;
+    top: 21%;
+    left: 15%;
+    position: absolute;
+}
+.circle{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 10%;
+    top: 5%;
+}
+.circle img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.circle1{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 30%;
+    top: 5%;
+}
+.circle1 img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.circle2{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 50%;
+    top: 5%;
+}
+.circle2 img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.circle3{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 70%;
+    top: 5%;
+}
+.circle3 img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.circle4{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 10%;
+    top: 25%;
+}
+.circle4 img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.circle5{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 30%;
+    top: 25%;
+}
+.circle5 img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.circle6{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 50%;
+    top: 25%;
+}
+.circle6 img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.circle7{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 70%;
+    top: 25%;
+}
+.circle7 img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+#kk{
+    opacity: 0;
+    pointer-events: none;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+}
+#kks{
+    height: 100%;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+#kkm{
+    height: 20%;
+    width: 100%;
+    background-color: hwb(39 58% 2%); 
+    border-bottom: 1px solid rgba(235, 191, 191, 0.967);
+}
+#kkm h2{
+    font-size: 130px; 
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+     font-family: "voyage";
+    color:rgba(244, 62, 7, 0.971);
+}
+#kkm img{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    transform: translate(-50%,-50%);
+    height: 223px;
+    width: 170px;
+}
+#kkm h1{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+#kkm p{
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+#kkm h3{
+    position: absolute;
+    top: 13%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+#kkka{
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    background-color: rgb(238, 201, 151);
+}
+#kkka #kk1{
+    position: absolute;
+    height: 250px;
+    width: 240px;
+    background-color: aliceblue;
+    left: 3%;
+    top: 2%;
+}
+#kk1 img{
+    height: 190px;
+    width: 190px;
+}
+#kk1-nav{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#kk1-nav button{
+    margin-left: 22px;
+    padding:2px 3px ;
+}
+#kk1-nav h4{
+padding-left: 22px;
+opacity: .6;
+font-size: 15px;
+color: green;
+}
+#kkka #kk2{
+    position: absolute;
+    height: 250px;
+    width: 240px;
+    background-color: aliceblue;
+    left: 28%;
+    top: 2%; 
+}
+#kk2 img{
+    height: 190px;
+    width: 190px;
+}
+#kk2-nav{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#kk2-nav button{
+    margin-left: 22px;
+    padding:2px 3px ;
+}
+#kk2-nav h4{
+padding-left: 25px;
+font-size: 15px;
+opacity: .6;
+color: green;
+}
+#kkka #kk3{
+    position: absolute;
+    height: 250px;
+    width: 240px;
+    background-color: aliceblue;
+    left: 53%;
+    top: 2%; 
+}
+#kk3 img{
+    padding-left: 20px;
+    height: 190px;
+    width: 190px;
+}
+#kk3-nav{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#kk3-nav button{
+    margin-left: 22px;
+    padding:2px 3px ;
+}
+#kk3-nav h4{
+padding-left: 25px;
+font-size: 15px;
+opacity: .6;
+color: green;
+}
+#kkka #kk4{
+    position: absolute;
+    height: 250px;
+    width: 240px;
+    background-color: aliceblue;
+    left: 78%;
+    top: 2%; 
+}
+#kk4 img{
+    height: 190px;
+    width: 190px;
+}
+#kk4-nav{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#kk4-nav button{
+    margin-left: 22px;
+    padding:2px 3px ;
+}
+#kk4-nav h4{
+    padding-left: 25px;
+    font-size: 15px;
+    opacity: .6;
+    color: green;
+}
+#kkka #kk5{
+    position: absolute;
+    height: 250px;
+    width: 240px;
+    background-color: aliceblue;
+    left: 3%;
+    top: 52%; 
+}
+#kk5 img{
+    height: 190px;
+    width: 190px;
+}
+#kk5-nav{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#kk5-nav button{
+    margin-left: 22px;
+    padding:2px 3px ;
+}
+#kk5-nav h4{
+padding-left: 25px;
+font-size: 15px;
+opacity: .6;
+color: green;
+}
+#kkka #kk6{
+    position: absolute;
+    height: 250px;
+    width: 240px;
+    background-color: aliceblue;
+    left: 28%;
+    top: 52%; 
+}
+#kk6 img{
+    height: 190px;
+    width: 190px;
+}
+#kk6-nav{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#kk6-nav button{
+    margin-left: 22px;
+    padding:2px 3px ;
+}
+#kk6-nav h4{
+    padding-left: 25px;
+    font-size: 15px;
+    opacity: .6;
+    color: green;
+}
+#kkka #kk7{
+    position: absolute;
+    height: 250px;
+    width: 240px;
+    background-color: aliceblue;
+    left: 53%;
+    top: 52%; 
+}
+#kk7 img{
+    height: 190px;
+    width: 190px;
+}
+#kk7-nav{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#kk7-nav button{
+    margin-left: 22px;
+    padding:2px 3px ;
+}
+#kk7-nav h4{
+padding-left: 25px;
+font-size: 15px;
+opacity: .6;
+color: green;
+}
+#kkka #kk8{
+    position: absolute;
+    height: 250px;
+    width: 240px;
+    background-color: aliceblue;
+    left: 78%;
+    top: 52%; 
+}
+#kk8 img{
+    height: 190px;
+    width: 190px;
+}
+#kk8-nav{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#kk8-nav button{
+    margin-left: 22px;
+    padding:2px 3px ;
+}
+#kk8-nav h4{
+padding-left: 25px;
+font-size: 15px;
+opacity: .6;
+color: green;
+}
